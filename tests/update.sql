@@ -4,5 +4,5 @@
 \set aid random(1, :naccounts)
 \set bid random(1, :nbranches)
 \set tid random(1, :ntellers)
-\set delta random(-5000, 5000)
+\set delta random(-5000, 5000 )
 UPDATE pgbench_accounts SET abalance = abalance + :delta WHERE aid = :aid;
